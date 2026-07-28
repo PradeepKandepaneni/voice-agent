@@ -1,0 +1,4 @@
+pipecat-ai[deepgram,cartesia,google,silero]==1.6.0
+twilio
+python-dotenv
+loguru
