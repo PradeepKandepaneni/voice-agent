@@ -23,7 +23,7 @@ def gemini_reply(system_prompt, history):
     body = {
         "system_instruction": {"parts": [{"text": system_prompt}]},
         "contents": history,
-        "generationConfig": {"temperature": 0.7, "maxOutputTokens": 200},
+        "generationConfig": {"temperature": 0.7, "maxOutputTokens": 800},
     }
     data = json.dumps(body).encode("utf-8")
     req = urllib.request.Request(
@@ -87,4 +87,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
